@@ -2,9 +2,10 @@
 #use lowercase list
 def islower(text: str):
     lowercase_list = [x for x in 'abcdefghijklmnopqrstuvwxyz']
-    for char in text:
-        if char.isalpha() and char in lowercase_list:
-            return True
-        return False
     
-print(islower("Hfklsih"))
+    for char in text:
+        if char.isalpha() and not char in lowercase_list:
+            return False
+    return True
+    
+print(islower("32fhFkjsd928ydf"))
