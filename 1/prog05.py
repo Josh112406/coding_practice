@@ -8,4 +8,4 @@ def startswith(text: str, prefix: str) -> bool:
 
 #shorter version of the first function, less readable
 def startswith(text: str, prefix: str) -> bool:
-    return True if text.find(prefix) == 0 else False
+    return text.find(prefix) == 0
