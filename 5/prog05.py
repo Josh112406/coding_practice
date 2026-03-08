@@ -6,9 +6,8 @@ name_list = []
 name = input("Enter your name: ")
 char_list = name.split()
 
-for char in char_list:
+for chars in char_list:
     new_string = ""
-    chars = list(char)
     
     if "a" <= chars[0] <= "z":
         new_string += chr(ord(chars[0]) - 32)
