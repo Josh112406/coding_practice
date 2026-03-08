@@ -16,7 +16,10 @@
 #try to create more efficient algorithm
 def count(text: str, substring: str):
     count = 0
-    
+    len_substring = len(substring) 
+    for i in range(len(text)):
+        if text[i : i + len_substring] == substring:
+            count += 1
+    return count
 
 
-print(count("sub sub sub sub", "sub"))
