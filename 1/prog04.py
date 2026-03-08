@@ -2,7 +2,7 @@
 #use lowercase list
 def islower(text: str) -> bool:
     for char in text:
-        if char.isalpha() and not char in 'abcdefghijklmnopqrstuvwxyz': #remove lowercase characters list comprehension for simplicity
+        if char.isalpha() and char not in 'abcdefghijklmnopqrstuvwxyz': #remove lowercase characters list comprehension for simplicity
             return False
     return True
     
