@@ -5,7 +5,7 @@
 #                 "q": "Q", "r": "R", "s": "S", "t": "T", "u": "U", "v": "V", "w": "W", "x": "X", "y": "Y", "z": "Z"}
 #use ord() then convert back using chr()
 
-def upper(text: str):
+def upper(text: str) -> str:
     new_text = ""
     for char in text:
         if "a" <= char <= "z":

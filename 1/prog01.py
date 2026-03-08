@@ -2,7 +2,7 @@
 # rstrip() removes last character in argument list. skips if not included
 #chars default is whitespace like in rstrip
 
-def rstrip(text: str, chars: str = " "): 
+def rstrip(text: str, chars: str = " ") -> str: 
     #convert string to list
     text_list = [x for x in text]
     char_list = [x for x in chars]
