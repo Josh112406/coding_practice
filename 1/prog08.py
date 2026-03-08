@@ -16,6 +16,7 @@
 #try to create more efficient algorithm
 def count(text: str, substring: str):
     count = 0
+    
 
 
 print(count("sub sub sub sub", "sub"))
