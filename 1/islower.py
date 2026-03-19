@@ -6,3 +6,10 @@ def islower(text: str) -> bool:
             return False
     return True
     
+#revised version, more readable and faster    
+def islower(text: str) -> bool:
+    for char in text:
+        if char.isalpha() and not "a" <= char <= "z": #remove lowercase characters list comprehension for simplicity
+            return False
+    return True
+    
