@@ -4,7 +4,7 @@
 nums = []
 duplicates = {}
 for i in range(10):
-    nums += [float(input(f"Enter number {i + 1}: "))]
+    nums.append(float(input(f"Enter number {i + 1}: ")))
     if nums[i] not in duplicates:
         duplicates[nums[i]] = 1
     else:
