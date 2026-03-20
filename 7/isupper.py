@@ -5,3 +5,10 @@ def isupper(text: str) -> bool:
             return False
     return True
     
+#revised version like in islower
+def isupper(text: str) -> bool:
+    for char in text:
+        if char.isalpha() and not "A" <= char <= "Z": #remove uppercase characters list comprehension for simplicity
+            return False
+    return True
+    
