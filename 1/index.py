@@ -6,5 +6,5 @@ def index(text: str, substring: str) -> int:
     for i in range(len(text)):
         if text[i : i + len_substring] == substring:
             return i
-    return -1
+    raise IndexError
         
