@@ -3,8 +3,10 @@ num_list = []
 duplicates = []
 for i in range(1, 11): 
     num = float(input(f"Enter number {i}: "))
-    if num in num_list and num not in duplicates:
-        duplicates.append(num)
-    else:
-        num_list.append(num)
+    if num in num_list:
+        if num not in duplicates:
+            duplicates.append(num)
+    
+    num_list.append(num)
+    
 print(duplicates)
