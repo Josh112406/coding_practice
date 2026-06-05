@@ -11,7 +11,7 @@ while True:
             if nums[i] not in occurence:
                 occurence[nums[i]] = 1
             else:
-                occurence[nums[i]] = occurence[nums[i]] + 1 
+                occurence[nums[i]] += 1 
         max_duplicate = max(occurence.values())
         duplicates.extend([key for key, value in occurence.items() if value == max_duplicate])
         break
