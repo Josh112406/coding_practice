@@ -9,6 +9,8 @@ def count(text: str, substring: str) -> int:
         if text[i : i + len_substring] == substring:
             count += 1
             i += len_substring
+        else:
+            i += 1
     return count
 
 
