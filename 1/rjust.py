@@ -3,6 +3,9 @@
 #use built in * operation for string and multiply the given value. default is whitespace
 
 def rjust(string: str, count: int, value: str = " ") -> str:
+    if count <= len(string):
+        return string
+    
     return (count - len(string)) * value + string
 
 
